@@ -1,6 +1,7 @@
 programa
 {
-	inclua biblioteca Matematica-->mat
+	inclua biblioteca Matematica
+-->mat
 	
 	funcao inicio()
 	{
@@ -24,7 +25,7 @@ programa
 
 	se(media >= 5){
 		escreva("Aluno ", nome , " Aprovado\n", "Você fechou com: ", mat.arredondar(media, 1))
-	}senao se(media <= 4 ou media > 2){
+	}senao se(media > 2 e media <= 4){
 		escreva("Aluno ", nome, " Esta de exame\n", "Você fechou com: ", mat.arredondar(media, 1))
 	}senao{
 		escreva("Aluno ", nome, " Reprovado\n", " Você fechou com: ", mat.arredondar(media, 1))
